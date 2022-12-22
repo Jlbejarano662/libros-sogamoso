@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Categories from './pages/Categories';
 import ProductDetails from './pages/ProductDetails';
+import PurchaseOrder from './pages/PurchaseOrder';
 //import components 
 import Sidebar from './components/Sidebar';
 import Header from './components/Header';
@@ -18,6 +19,7 @@ const App = () => {
         <Route path='/' element={<Home/>}/>
         <Route path='/categories' element={<Categories/>}/>
         <Route path='/product/:id' element={<ProductDetails/>}/>
+        <Route path='/purchaseOrder' element={<PurchaseOrder/>}/>
       </Routes>
       <Sidebar/>
       <Footer/>

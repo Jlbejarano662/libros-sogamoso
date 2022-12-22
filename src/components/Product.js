@@ -44,7 +44,7 @@ const Product = ({ product }) => {
       <Link to={"/product/" + id}>
         <h2 className="font-semibold mb-1 text-[#403E41]">{title}</h2>
       </Link>
-      <div className=" text-[#403E41]">$ {price}</div>
+      <div className=" text-[#403E41]">$ {Intl.NumberFormat("es-ES").format(price)}</div>
     </div>
   );
 };

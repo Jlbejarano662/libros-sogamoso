@@ -7,7 +7,7 @@ import { IoMdClose, IoMdAdd, IoMdRemove } from "react-icons/io";
 import { CartContext } from "../contexts/CartContext";
 
 const CartItem = ({ item }) => {
-  const { removeFromCart } = useContext(CartContext);
+  const { removeFromCart, increaseAmount, decreaseAmount} = useContext(CartContext);
 
   // destructure item
   const { id, title, image, price, amount } = item;
@@ -36,28 +36,28 @@ const CartItem = ({ item }) => {
           </div>
           <div className="flex gap-x-2 h-[36px] text-sm">
             {/* quantity */}
-            <div className="flex flex-1 max-w-[100px] items-center h-full border text-[#403E41] font-medium">
+            <div className="flex flex-1 max-w-[100px] items-center h-full font-medium">
               {/* minus icon */}
-              <div className="flex-1 h-full flex justify-center items-center cursor-pointer">
+              <div onClick={() => decreaseAmount(id)} className="flex-1 h-4 flex justify-center items-center cursor-pointer bg-[#403E41] text-white">
                 <IoMdRemove />
               </div>
               {/* amount */}
-              <div className="h-full flex justify-center items-center px-2">
+              <div className="h-full flex justify-center items-center px-4 text-[#403E41]">
                 {amount}
               </div>
               {/* plus icon */}
-              <div className="flex-1 h-full flex justify-center items-center cursor-pointer">
+              <div onClick={() => increaseAmount(id)} className="flex-1 h-4 flex justify-center items-center cursor-pointer bg-[#FBD111] text-white">
                 <IoMdAdd />
               </div>
             </div>
             {/* item price */}
             <div className="flex-1 flex items-center justify-around">
-              $ {price}
+              $ {Intl.NumberFormat("es-ES").format(price)}
             </div>
             {/* final price */}
             {/* make the price at 2 decimals */}
             <div className="flex-1 flex justify-end items-center text-[#403E41] font-bold">
-              {"$ " + parseFloat(price * amount).toFixed(0)}
+              {"$ " + Intl.NumberFormat("es-ES").format(price * amount)}
             </div>
           </div>
         </div>
