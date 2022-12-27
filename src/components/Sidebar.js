@@ -34,7 +34,7 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <div className=" h-max-[70vh] overflow-y-scroll scrollbar-thin scrollbar-thumb-[#403e4140]">
+      <div className="h-[60vh] xl:h-[70vh] overflow-y-scroll overflow-x-hidden scrollbar-thin scrollbar-thumb-[#403e4140]">
         {cart.map((item) => {
           return <CartItem item={item} key={item.id} />;
         })}
