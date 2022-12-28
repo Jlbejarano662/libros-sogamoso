@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply font-primary text-primary;
+    @apply font-primary text-secondary;
   }
 }
 

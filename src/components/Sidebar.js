@@ -50,7 +50,7 @@ const Sidebar = () => {
           {/* clear cart icon */}
           <div
             onClick={clearCart}
-            className="cursor-pointer py-4 bg-[#FBD111] text-white w-10 h-10 flex justify-center items-center text-lg"
+            className="cursor-pointer py-4 bg-primary text-white w-10 h-10 flex justify-center items-center text-lg"
           >
             <FiTrash2 />
           </div>
@@ -58,7 +58,7 @@ const Sidebar = () => {
       </div>
       <div className="w-full flex justify-center my-4">
         <Link to={"/purchaseOrder"}>
-        <button className="bg-[#FBD111] text-[#403E41] px-4 py-2 rounded-sm font-semibold w-48">
+        <button className="bg-primary text-secondary px-4 py-2 rounded-sm font-semibold w-48">
           Continuar
         </button>
         </Link>
