@@ -34,7 +34,7 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <div className=" h-[70vh] overflow-y-scroll scrollbar-thin scrollbar-thumb-[#403e4140]">
+      <div className="h-[60vh] xl:h-[70vh] overflow-y-scroll overflow-x-hidden scrollbar-thin scrollbar-thumb-[#403e4140]">
         {cart.map((item) => {
           return <CartItem item={item} key={item.id} />;
         })}
@@ -50,7 +50,7 @@ const Sidebar = () => {
           {/* clear cart icon */}
           <div
             onClick={clearCart}
-            className="cursor-pointer py-4 bg-[#FBD111] text-white w-10 h-10 flex justify-center items-center text-lg"
+            className="cursor-pointer py-4 bg-primary text-white w-10 h-10 flex justify-center items-center text-lg"
           >
             <FiTrash2 />
           </div>
@@ -58,7 +58,7 @@ const Sidebar = () => {
       </div>
       <div className="w-full flex justify-center my-4">
         <Link to={"/purchaseOrder"}>
-        <button  className="bg-[#FBD111] text-[#403E41] px-4 py-2 rounded-sm font-semibold w-48">
+        <button className="bg-primary text-secondary px-4 py-2 rounded-sm font-semibold w-48">
           Continuar
         </button>
         </Link>

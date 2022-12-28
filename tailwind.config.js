@@ -2,7 +2,7 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
-      primary: 'Poppins',
+      primary: 'Rubik',
     },
     container: {
       padding: {
@@ -18,11 +18,11 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#222222',
-        secondary: '#F5E6E0',
+        primary: '#FBD111',
+        secondary: '#403E41',
       },
       backgroundImage: {
-        hero: "url('./img/bg_hero.svg')",
+        hero: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/front_page.png')",
       },
     },
   },

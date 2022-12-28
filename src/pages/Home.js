@@ -3,7 +3,9 @@ import React, { useContext } from "react";
 // import product context
 import { ProductContext } from "../contexts/ProductContext";
 // import components
+import FrontPage from '../components/FrontPage'
 import Product from '../components/Product';
+
 
 const Home = () => {
   // get products from product context
@@ -18,10 +20,8 @@ const Home = () => {
   }); */
   //console.log(filteredProducts);
   return (
-    <div>
-      <section className="py-16">
-        Home
-      </section>
+    <div className="mt-[3rem]">
+      <FrontPage/>
     </div>
   );
 };
