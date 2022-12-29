@@ -9,14 +9,15 @@ const Categories = () => {
   // get products from product context
   const { products } = useContext(ProductContext);
 
-  //CAMBIAR POR LAS CATEGORÍAS QUE TENGO
-  //get only men´s & women's clothing category
-  /* const filteredProducts = products.filter((item) => {
+  // if products is not found
+  if (products.length == 0) {
     return (
-      item.category === "women's clothing" || item.category === "men's clothing"
+      <section className="h-screen flex justify-center items-center">
+        Cargando...
+      </section>
     );
-  }); */
-  //console.log(filteredProducts);
+  }
+
   return (
     <div>
       <section className="py-16">

@@ -20,6 +20,7 @@ module.exports = {
       colors: {
         primary: '#FBD111',
         secondary: '#403E41',
+        tertiary: '#181518',
       },
       backgroundImage: {
         hero: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/front_page.png')",

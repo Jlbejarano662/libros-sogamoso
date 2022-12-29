@@ -15,7 +15,7 @@ const Header = () => {
 
   const { itemAmount } = useContext(CartContext);
 
-  const [ open, setOpen ] = useState(false);
+  const [ open, setOpen ] = useState(true);
 
   return (
     <header className="bg-[#FBD111] text-[#403E41] fixed w-full z-10 font-bold pb-2 md:pb-0">
