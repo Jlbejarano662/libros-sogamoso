@@ -53,7 +53,7 @@ const Categories = () => {
           Categorías
         </h1>
         <div className="container mx-auto lg:flex items-start min-h-screen">
-          <section className="w-[50%] flex justify-center my-8 lg:hidden">
+          <section className="md:w-[50%] flex justify-center my-8 lg:hidden items-center">
             <select
             onChange={handleOnChecked}
               id="categories"
