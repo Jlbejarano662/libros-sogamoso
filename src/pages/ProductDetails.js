@@ -5,6 +5,8 @@ import { useParams } from "react-router-dom";
 import { CartContext } from "../contexts/CartContext";
 // import product context
 import { ProductContext } from "../contexts/ProductContext";
+// impor filter
+import {Filter} from "../components/Filter"
 
 const ProductDetails = () => {
   // get the product id from the url

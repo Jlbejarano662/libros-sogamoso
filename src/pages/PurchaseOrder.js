@@ -70,7 +70,6 @@ const PurchaseOrder = () => {
           </div>
         </div>
       </form>
-      <Sidebar/>
     </section>
     
     </>
