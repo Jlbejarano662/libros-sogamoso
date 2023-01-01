@@ -10,9 +10,9 @@ const Categories = () => {
   const { products } = useContext(ProductContext);
   // category selected
   const [category, setCategory] = useState({
-    ficcion: false,
-    romanceDrama: false,
-    autoayudaFinanzasPersonales: false,
+    Ficcion: false,
+    RomanceYDrama: false,
+    AutoayudaYFinanzasPersonales: false,
     infantiles: false,
   });
 
@@ -62,12 +62,12 @@ const Categories = () => {
               <option>
                 Categorías
               </option>
-              <option value="ficcion">Ficción</option>
-              <option value="romanceDrama">Romance y drama</option>
-              <option value="autoayudaFinanzasPersonales">
+              <option value="Ficcion">Ficción</option>
+              <option value="RomanceYDrama">Romance y drama</option>
+              <option value="AutoayudaYFinanzasPersonales">
                 Autoayuda y Finanzas personales
               </option>
-              <option value="infantiles">Infantiles</option>
+              <option value="Infantiles">Infantiles</option>
             </select>
           </section>
           <section className="mr-2 hidden lg:block">
@@ -82,10 +82,10 @@ const Categories = () => {
                 className="mr-4"
                 type="radio"
                 name="categories"
-                value="ficcion"
-                id="ficcion"
+                value="Ficcion"
+                id="Ficcion"
               />
-              <label htmlFor="ficcion">Ficción</label>
+              <label htmlFor="Ficcion">Ficción</label>
             </div>
             {/* Romance y drama */}
             <div className="text-lg mb-2 flex">
@@ -94,10 +94,10 @@ const Categories = () => {
                 className="mr-4"
                 type="radio"
                 name="categories"
-                value="romanceDrama"
-                id="romanceDrama"
+                value="RomanceYDrama"
+                id="RomanceYDrama"
               />
-              <label htmlFor="romanceDrama">Romance y drama</label>
+              <label htmlFor="RomanceYDrama">Romance y drama</label>
             </div>
             {/* Autoayuda y Finanzas personales */}
             <div className="text-lg mb-2 flex">
@@ -106,10 +106,10 @@ const Categories = () => {
                 className="mr-4"
                 type="radio"
                 name="categories"
-                value="autoayudaFinanzasPersonales"
-                id="autoayudaFinanzasPersonales"
+                value="AutoayudaYFinanzasPersonales"
+                id="AutoayudaYFinanzasPersonales"
               />
-              <label htmlFor="autoayudaFinanzasPersonales">
+              <label htmlFor="AutoayudaYFinanzasPersonales">
                 Autoayuda y Finanzas personales
               </label>
             </div>
@@ -120,10 +120,10 @@ const Categories = () => {
                 className="mr-4"
                 type="radio"
                 name="categories"
-                value="infantiles"
-                id="infantiles"
+                value="Infantiles"
+                id="Infantiles"
               />
-              <label htmlFor="infantiles">Infantiles</label>
+              <label htmlFor="Infantiles">Infantiles</label>
             </div>
           </section>
           <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[30px] max-w-sm mx-auto md:max-w-none md:mx-0">
