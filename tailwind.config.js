@@ -24,6 +24,7 @@ module.exports = {
       },
       backgroundImage: {
         hero: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/front_page.png')",
+        space: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/bg_2.png')",
       },
     },
   },
