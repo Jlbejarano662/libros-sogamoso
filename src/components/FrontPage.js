@@ -13,12 +13,11 @@ const FrontPage = () => {
   // get products from product context
   const { categories, products } = useContext(ProductContext);
 
-  console.log(categories);
-  console.log(products);
+  
   //HTML
   return <div>
     {/* Banner */}
-    <section className='h-[100vh] bg-hero bg-no-repeat bg-cover bg-center mt-[3rem]'>
+    <section className='container mx-auto h-[100vh] bg-hero bg-no-repeat bg-cover bg-center mt-[3rem]'>
       <div className='h-full w-full flex flex-col justify-center items-center  align-middle text-white font-bold text-center'>
         {/* text */}
         <div className='container mx-auto  text-5xl my-4 md:text-6xl md:w-[70%] lg:text-7xl lg:w-[60%] xl:text-8xl xl:w-[50%]'>Bienvenido a Libros Sogamoso</div>
@@ -76,21 +75,21 @@ const FrontPage = () => {
       </div>
     </section>
     {/* Categories */}
-    <section>
+    <section className="container mx-auto py-10">
       {/* title */}
-      <h1 className="w-full text-center font-extrabold text-3xl md:text-4xl lg:text-5xl text-primary mb-8">
+      <h1 className="w-full text-center font-extrabold text-3xl md:text-4xl lg:text-5xl text-tertiary mb-8">
         Categorías
       </h1>
       {/* content */}
       <div className='container mx-auto lg:flex items-start'>
         {/* products */}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[30px] max-w-sm mx-auto md:max-w-none md:mx-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[30px]  max-w-sm mx-auto md:max-w-none md:mx-0 mb-8">
           {
             categories.map((product) => {
               return (
                 <div>
-                  <h3 className="w-full font-extrabold text-xl text-tertiary my-8">
+                  <h3 className="w-full font-extrabold text-xl text-tertiary my-4 first-letter:uppercase lowercase">
                     {product.category.match(/[A-Z]+(?![a-z])|[A-Z]?[a-z]+|\d+/g).join(" ")
                     }
                   </h3>
@@ -99,8 +98,22 @@ const FrontPage = () => {
           }
         </div>
       </div>
+      <div className="w-full flex justify-center my-4">
+          <Link to={"/categories"}>
+            <button className="bg-[#FBD111] text-[#403E41] px-4 py-2 rounded-sm w-48 text-2xl">Ver mas</button>
+          </Link>
+        </div>
     </section>
-    FrontPage
+        {/* phrase */}
+        <section className="container mx-auto py-40 md:py-20 bg-space bg-no-repeat bg-cover bg-center">
+        {/* text */}
+        <div className="text-center md:w-[70%] lg:w-[50%] mx-auto">
+          <h1 className='text-white  text-4xl md:text-6xl mb-8'>
+          “Sé el cambio que quieres ver en el mundo”
+          </h1>
+          <p className='text-primary'>MAHATMA GANDHI</p>
+        </div>
+    </section>
   </div>;
 };
 

@@ -14,9 +14,7 @@ root.render(
   <SidebarProvider>
     <CartProvider>
       <ProductsProvider>
-        
           <App />
-        
       </ProductsProvider>
     </CartProvider>
   </SidebarProvider>

@@ -26,9 +26,12 @@ const ProductProvider = ({ children }) => {
     //products categories
     const data2 = data.reduce((categories, item) => categories.set(item.category, item), new Map);
     let data3=[]; 
+    let counter = 1;
     for (let value of data2.values()) {
-      data3.push(value)
-      
+      if(counter <= 6) {
+        data3.push(value)
+      }
+      counter++;
     }
     setCategories([...data3])
     

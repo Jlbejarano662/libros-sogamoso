@@ -47,7 +47,7 @@ const Header = () => {
           {/* Cart */}
           <div
             onClick={() => setIsOpen(!isOpen)}
-            className="cursor-pointer flex justify-center items-center relative  mx-4 cart h-12 w-12"
+            className="cursor-pointer flex justify-center items-center relative  ml-4 cart h-12"
           >
             <BsBag className="text-2xl " />
             <div className="bg-[#403E41]  text-white icon-cart absolute  right-[0.5rem] bottom-[0.2rem] text-[12px] w-[18px] h-[18px] rounded-full flex justify-center items-center">
