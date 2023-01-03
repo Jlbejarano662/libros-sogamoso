@@ -13,7 +13,7 @@ const FrontPage = () => {
   // get products from product context
   const { categories, products } = useContext(ProductContext);
 
-  
+
   //HTML
   return <div>
     {/* Banner */}
@@ -99,20 +99,20 @@ const FrontPage = () => {
         </div>
       </div>
       <div className="w-full flex justify-center my-4">
-          <Link to={"/categories"}>
-            <button className="bg-[#FBD111] text-[#403E41] px-4 py-2 rounded-sm w-48 text-2xl">Ver mas</button>
-          </Link>
-        </div>
+        <Link to={"/categories"}>
+          <button className="bg-[#FBD111] text-[#403E41] px-4 py-2 rounded-sm w-48 text-2xl">Ver mas</button>
+        </Link>
+      </div>
     </section>
-        {/* phrase */}
-        <section className="container mx-auto py-40 md:py-20 bg-space bg-no-repeat bg-cover bg-center">
-        {/* text */}
-        <div className="text-center md:w-[70%] lg:w-[50%] mx-auto">
-          <h1 className='text-white  text-4xl md:text-6xl mb-8'>
+    {/* phrase */}
+    <section className="container mx-auto py-40 md:py-20 bg-space bg-no-repeat bg-cover bg-center">
+      {/* text */}
+      <div className="text-center md:w-[70%] lg:w-[50%] mx-auto">
+        <h1 className='text-white  text-4xl md:text-6xl mb-8'>
           “Sé el cambio que quieres ver en el mundo”
-          </h1>
-          <p className='text-primary'>MAHATMA GANDHI</p>
-        </div>
+        </h1>
+        <p className='text-primary'>MAHATMA GANDHI</p>
+      </div>
     </section>
   </div>;
 };
