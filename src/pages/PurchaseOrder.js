@@ -1,17 +1,36 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 //import
-import Sidebar from "../components/Sidebar";
 import { CartContext } from "../contexts/CartContext";
 
 //import link
 import { Link } from "react-router-dom";
 
 const PurchaseOrder = () => {
-
+  // Data cart
   const { cart, itemAmount, total } = useContext(CartContext)
+  // Form
+  const [form, setForm] = useState({
+    firstName: "",
+    lastName: "",
+    address: "",
+    comments: "",
+    cart: cart,
+    total: total,
+  });
 
+  const handleBuy = (e) => {
+    setForm ({
+      ...form, [e.target.id]: e.target.value,
+    })
+  };
+  console.log(cart + " - " + total );
+  /* const [ firstName, setFirstName] = useState("");
+  const [ lastName, setLastName] = useState("");
+  const [comments, setComments] = useState(""); 
+  const [comments, setComments] = useState(""); 
+ */
   return (<div className="container mt-14 lg:mt-8 mx-auto">
-    {/* Forma */}
+    {/* Form */}
     <section className=" min-h-[65vh] flex flex-col items-center justify-center">
       <h1 className="w-full text-center font-extrabold text-4xl text-tertiary my-8">Orden de Compra</h1>
       <p className="w-full font-extrabold text-xl text-tertiary text-left mb-4">Datos de Envío</p>
@@ -20,28 +39,30 @@ const PurchaseOrder = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
               className="block  text-secondary text-lg mb-2"
-              htmlFor="grid-first-name"
+              htmlFor="firstName"
             >
               Nombres:
             </label>
             <input
               className="appearance-none block w-full  border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:border-gray-400"
-              id="grid-first-name"
+              id="firstName"
               type="text"
+              onChange={handleBuy}
             />
             {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
           </div>
           <div className="w-full md:w-1/2 px-3">
             <label
               className="block  text-secondary text-lg mb-2"
-              htmlFor="grid-last-name"
+              htmlFor="lastName"
             >
               Apellidos:
             </label>
             <input
               className="appearance-none block w-full  border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:border-gray-400"
-              id="grid-last-name"
+              id="lastName"
               type="text"
+              onChange={handleBuy}
             />
           </div>
         </div>
@@ -49,14 +70,15 @@ const PurchaseOrder = () => {
           <div className="w-full px-3">
             <label
               className="block  text-secondary text-lg mb-2"
-              htmlFor="grid-address"
+              htmlFor="address"
             >
-              Dirección
+              Dirección:
             </label>
             <input
               className="appearance-none block w-full  border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:border-gray-400"
-              id="grid-address"
+              id="address"
               type="text"
+              onChange={handleBuy}
             />
           </div>
         </div>
@@ -64,13 +86,14 @@ const PurchaseOrder = () => {
           <div className="w-full px-3">
             <label
               className="block  text-secondary text-lg mb-2"
-              htmlFor="grid-comments"
+              htmlFor="comments"
             >
               Comentarios, preguntas y/o requerimientos adicionales:
             </label>
             <textarea
               className="appearance-none block w-full  border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:border-gray-400 h-40"
-              id="grid-comments"
+              id="comments"
+              onChange={handleBuy}
             />
             {/* <p className="text-gray-600 text-xs italic">
             Make it as long and as crazy as you'd like
@@ -81,7 +104,7 @@ const PurchaseOrder = () => {
 
     </section>
 
-    {/* cart resume*/}
+    {/* summary shopping cart*/}
     <section className=" gap-x-4 py-2 lg:px-6 w-full font-light text-[#403E41]">
       <p className="w-full font-extrabold text-xl text-tertiary text-left mb-4">Resumen de Compra ({itemAmount})</p>
       {cart.map((item) => {
@@ -129,13 +152,13 @@ const PurchaseOrder = () => {
         {Intl.NumberFormat("es-ES").format(total)}
       </div>
 
-      {/* */}
+      {/* indications*/}
       <p>*  Serás redireccionado a WhatsApp para terminar tu compra.</p>
-      {/* */}
+      {/* buy button */}
       <div className="w-full flex justify-center my-4">
 
         <button
-          onClick={() => {console.log(cart);}}
+          onClick={() => { console.log(form); }}
           className="bg-primary text-secondary px-4 py-2 rounded-sm font-semibold w-48"
         >
           Comprar

@@ -28,7 +28,6 @@ const Categories = () => {
   }
   //event filter
   const handleOnChecked = (e) => {
-    console.log(e.target.value);
     setCategory({
       ...category,
       [e.target.value]: e.target.checked,
