@@ -7,11 +7,14 @@ import { IoMdClose, IoMdAdd, IoMdRemove } from "react-icons/io";
 import { CartContext } from "../contexts/CartContext";
 
 const CartItem = ({ item }) => {
+
+  // get the shopping cart methods
   const { removeFromCart, increaseAmount, decreaseAmount} = useContext(CartContext);
 
   // destructure item
   const { id, title, image, price, amount } = item;
 
+  //HTML
   return (
     <div className="flex gap-x-4 py-2 lg:px-6 border-b  w-full font-light text-[#403E41]">
       <div className="w-full min-h-[150px] flex items-center gap-x-4">
@@ -22,14 +25,14 @@ const CartItem = ({ item }) => {
         <div className="w-full justify-between mb-2">
           {/* title & remove icon */}
           <div className="flex justify-between mb-2">
-            {/* title */}
+            {/* title & link to product detail */}
             <Link
               to={"/product/" + id}
               className="text-sm font-semibold max-w-[240px] text-[#403E41] hover:underline"
             >
               {title}
             </Link>
-            {/* remove icon */}
+            {/* remove icon with the method to remove items from the cart*/}
             <div onClick={() => removeFromCart(id)} className="text-xl cursor-pointer">
               <IoMdClose className="text-[#403E41] transition" />
             </div>
@@ -37,7 +40,7 @@ const CartItem = ({ item }) => {
           <div className="flex gap-x-2 h-[36px] text-sm">
             {/* quantity */}
             <div className="flex flex-1 max-w-[100px] items-center h-full font-medium">
-              {/* minus icon */}
+              {/* minus icon with the method to subtract a product from the cart*/}
               <div onClick={() => decreaseAmount(id)} className="flex-1 h-4 flex justify-center items-center cursor-pointer bg-[#403E41] text-white">
                 <IoMdRemove />
               </div>
@@ -45,7 +48,7 @@ const CartItem = ({ item }) => {
               <div className="h-full flex justify-center items-center px-4 text-[#403E41]">
                 {amount}
               </div>
-              {/* plus icon */}
+              {/* plus icon with the method for an increase of a product in the cart */}
               <div onClick={() => increaseAmount(id)} className="flex-1 h-4 flex justify-center items-center cursor-pointer bg-[#FBD111] text-white">
                 <IoMdAdd />
               </div>

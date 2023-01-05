@@ -1,89 +1,95 @@
 import React, { useState } from "react";
 
-const Filter = ({ products }) => {
+const Filter = ({ products, setLeakedData }) => {
+
   // category selected
   const [category, setCategory] = useState({
-    ficcion: false,
-    romanceDrama: false,
-    autoayudaFinanzasPersonales: false,
+    Ficcion: false,
+    RomanceYDrama: false,
+    AutoayudaYFinanzasPersonales: false,
     infantiles: false,
   });
 
-  //data products
-  const [leakedData, setLeakedData] = useState([products]);
-  //event
+
+
+  //event filter
   const handleOnChecked = (e) => {
-    if (e.target.value === "all") {
-      setCategory({
-        products,
-      });
-    } else {
-      setCategory({
-        ...category,
-        [e.target.value]: e.target.checked,
-      });
+    setCategory({
+      ...category,
+      [e.target.value]: e.target.checked,
+    });
+
+    if (e.target.checked || e.target.id === "categories") {
       const resultCategory = products.filter(
-        (item) => category[item.category] == true
+        (item) => item.category === e.target.value
       );
+
+      setLeakedData([...resultCategory]);
+    } else {
+      const resultCategory = products;
       setLeakedData([...resultCategory]);
     }
   };
 
-
   //HTML
-  return (
-    <div className="w-full">
+  return (<>
+    <section className="md:w-[50%] flex justify-center my-8 lg:hidden items-center">
+      <select
+        onChange={handleOnChecked}
+        id="categories"
+        className=" appearance-none block  border border-[#e4e4e4]  rounded py-3 px-4 leading-tight focus:outline-none focus:border-gray-400"
+      >
+        <option>
+          Categorías
+        </option>
+        <option value="Ficcion">Ficción</option>
+        <option value="RomanceYDrama">Romance y drama</option>
+        <option value="AutoayudaYFinanzasPersonales">
+          Autoayuda y Finanzas personales
+        </option>
+        <option value="Infantiles">Infantiles</option>
+      </select>
+    </section>
+    <section className="mr-2 hidden lg:block">
       {/* Categories */}
       <h2 className="font-extrabold text-xl text-tertiary text-left mb-4 ">
         Categorías
       </h2>
-      {/* Todas */}
-      <div className="text-lg mb-2 flex">
-        <input
-          onChange={handleOnChecked}
-          className="mr-4"
-          type="checkbox"
-          name="categories"
-          value="all"
-          id="all"
-        />
-        <label htmlFor="all">Todas</label>
-      </div>
       {/* Ficción */}
       <div className="text-lg mb-2 flex">
         <input
           onChange={handleOnChecked}
           className="mr-4"
-          type="checkbox"
+          type="radio"
           name="categories"
-          value="ficcion"
-          id="ficcion"
+          value="Ficcion"
+          id="Ficcion"
         />
-        <label htmlFor="ficcion">Ficción</label>
+        <label htmlFor="Ficcion">Ficción</label>
       </div>
       {/* Romance y drama */}
       <div className="text-lg mb-2 flex">
         <input
           onChange={handleOnChecked}
           className="mr-4"
-          type="checkbox"
+          type="radio"
           name="categories"
-          value="romanceDrama"
-          id="romanceDrama"
+          value="RomanceYDrama"
+          id="RomanceYDrama"
         />
-        <label htmlFor="romanceDrama">Romance y drama</label>
+        <label htmlFor="RomanceYDrama">Romance y drama</label>
       </div>
       {/* Autoayuda y Finanzas personales */}
       <div className="text-lg mb-2 flex">
         <input
           onChange={handleOnChecked}
           className="mr-4"
-          type="checkbox"
+          type="radio"
           name="categories"
-          value="autoayudaFinanzasPersonales"
-          id="autoayudaFinanzasPersonales"
+          value="AutoayudaYFinanzasPersonales"
+          id="AutoayudaYFinanzasPersonales"
         />
-        <label htmlFor="autoayudaFinanzasPersonales">
+        <label htmlFor="AutoayudaYFinanzasPersonales">
           Autoayuda y Finanzas personales
         </label>
       </div>
@@ -92,14 +98,15 @@ const Filter = ({ products }) => {
         <input
           onChange={handleOnChecked}
           className="mr-4"
-          type="checkbox"
+          type="radio"
           name="categories"
-          value="infantiles"
-          id="infantiles"
+          value="Infantiles"
+          id="Infantiles"
         />
-        <label htmlFor="infantiles">Infantiles</label>
+        <label htmlFor="Infantiles">Infantiles</label>
       </div>
-    </div>
+    </section>
+  </>
   );
 };
 

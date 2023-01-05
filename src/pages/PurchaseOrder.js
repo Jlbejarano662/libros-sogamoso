@@ -158,7 +158,7 @@ const PurchaseOrder = () => {
 
         <ReactWhatsapp
           className="bg-primary text-secondary px-4 py-2 rounded-sm font-semibold w-48"
-          number="57-315-751-3152"
+          number="57-301-649-0791"
           message={`¡Hola! Estoy interesad@ en relizar el siguiente pedido: \n \n *Resumen de Compra:*\n${cart.map((product) =>
             " - _Título: " + product.title + ", cantidad: " + product.amount + ", subtotal: " + Intl.NumberFormat("es-ES").format(product.price * product.amount) + "_"
           ).join("\n")} \n Total: $${Intl.NumberFormat("es-ES").format(total)} COP \n \n *Datos de Envío:* \n - _Nombre: ${form.firstName} ${form.lastName}_ \n - _Dirección: ${form.address}_ \n - _Comentarios: ${form.comments}_`} >
