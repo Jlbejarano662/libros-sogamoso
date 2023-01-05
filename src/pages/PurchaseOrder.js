@@ -5,6 +5,8 @@ import { CartContext } from "../contexts/CartContext";
 //import link
 import { Link } from "react-router-dom";
 
+import ReactWhatsapp from "react-whatsapp";
+
 const PurchaseOrder = () => {
   // Data cart
   const { cart, itemAmount, total } = useContext(CartContext)
@@ -19,16 +21,13 @@ const PurchaseOrder = () => {
   });
 
   const handleBuy = (e) => {
-    setForm ({
+    setForm({
       ...form, [e.target.id]: e.target.value,
     })
   };
-  console.log(cart + " - " + total );
-  /* const [ firstName, setFirstName] = useState("");
-  const [ lastName, setLastName] = useState("");
-  const [comments, setComments] = useState(""); 
-  const [comments, setComments] = useState(""); 
- */
+
+
+
   return (<div className="container mt-14 lg:mt-8 mx-auto">
     {/* Form */}
     <section className=" min-h-[65vh] flex flex-col items-center justify-center">
@@ -157,14 +156,17 @@ const PurchaseOrder = () => {
       {/* buy button */}
       <div className="w-full flex justify-center my-4">
 
-        <button
-          onClick={() => { console.log(form); }}
+        <ReactWhatsapp
           className="bg-primary text-secondary px-4 py-2 rounded-sm font-semibold w-48"
-        >
-          Comprar
-        </button>
+          number="57-315-751-3152"
+          message={`¡Hola! Estoy interesad@ en relizar el siguiente pedido: \n \n *Resumen de Compra:*\n${cart.map((product) =>
+            " - _Título: " + product.title + ", cantidad: " + product.amount + ", subtotal: " + Intl.NumberFormat("es-ES").format(product.price * product.amount) + "_"
+          ).join("\n")} \n Total: $${Intl.NumberFormat("es-ES").format(total)} COP \n \n *Datos de Envío:* \n - _Nombre: ${form.firstName} ${form.lastName}_ \n - _Dirección: ${form.address}_ \n - _Comentarios: ${form.comments}_`} >
+          Compar
+        </ReactWhatsapp>
 
       </div>
+
     </section>
 
   </div>

@@ -19,7 +19,7 @@ const Categories = () => {
   //data filtering
   const [leakedData, setLeakedData] = useState(products);
   // if products is not found
-  if (products.length == 0) {
+  if (products.length === 0) {
     return (
       <section className="h-screen flex justify-center items-center">
         Cargando...
@@ -33,7 +33,7 @@ const Categories = () => {
       [e.target.value]: e.target.checked,
     });
 
-    if (e.target.checked || e.target.id == "categories") {
+    if (e.target.checked || e.target.id === "categories") {
       const resultCategory = products.filter(
         (item) => item.category === e.target.value
       );
@@ -126,7 +126,7 @@ const Categories = () => {
             </div>
           </section>
           <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[30px] max-w-sm mx-auto md:max-w-none md:mx-0">
-            {leakedData.length == 0
+            {leakedData.length === 0
               ? products.map((product) => {
                   return <Product product={product} key={product.id} />;
                 })
