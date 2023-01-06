@@ -1,22 +1,23 @@
 
-<h1 align="center">LibrosSogamoso
+<h1 align="center">LIBROSSOGAMOSO</h1> 
 <p align="center">
- <img width="170" height="150" src="https://user-images.githubusercontent.com/92338030/211099029-6ae9d231-6343-4715-8cd3-068449487215.png">
+ <img src="https://user-images.githubusercontent.com/92338030/211099029-6ae9d231-6343-4715-8cd3-068449487215.png">
 </p>
-</h1> 
+
 <hr>
 <h3>Introducción</h3>
 LibrosSogamoso es una librería virtual conformada por dos estudiantes de Ingeniería de la Universidad
 Pedagógica y Tecnológica de Colombia, amantes de la lectura, que viendo el auge principalmente
 de dos cosas; la pérdida del hábito de la lectura en la juventud y, el crecimiento de la lectura en
 digital por precios poco asequibles, decidieron ir de puerta en puerta, tienda en tienda ofreciendo
-libros.
+libros.<br>
 LibrosSogamoso fomenta el hábito de la lectura, a través de resúmenes y recomendaciones de los libros más
 leidos o bestsellers. Crea contenido de valor en cuanto a los beneficios de la lectura y como ser
 más eficientes a la hora de leer. Realiza pequeñas donaciones cada bimestre a personas en
 condición de calle. 
 <h3>Objetivo</h3>
 Desarrollar un eCommerce con el framework react JS para LibrosSogamoso, este proyecto:
+<br>
 <ol>
 <li>Tiene un sección de bienvenida a la tienda y descripción del negocio.</li>
 <li>Permite ver y filtrar por categorías los libros que orefrece la empresa.</li>
@@ -25,6 +26,7 @@ Desarrollar un eCommerce con el framework react JS para LibrosSogamoso, este pro
 </ol> 
 <h3>Alcance</h3>
 La aplicación tendrá como público objetivo los clientes actuales y potenciales de LibrosSogamoso.
+<br>
 <h3>Herramientas utilizadas</h3>
   Las herramientas utilizadas para la creación de esta propuesta son:
   <p>Trello para realizar la planeación y organización del proyecto</p><img width="40px"src="https://user-images.githubusercontent.com/86115727/199334676-02ff98e0-5f82-4ee3-920c-8a40e748cabb.png" alt="Logo Trello">
@@ -38,4 +40,4 @@ La aplicación tendrá como público objetivo los clientes actuales y potenciale
 <h3>Despliegue</h3>
 <a href="https://libros-sogamoso-deploy.vercel.app/">Despliegue con Vercel</a>
 <h3>Documentación técnica</h3>
-<a href="">Documentación técnica</a>
+<a href="https://drive.google.com/drive/folders/18UTYUR4nLQds6B4QPPXG082BzulG_LMW?usp=share_link">Documentación técnica</a>
