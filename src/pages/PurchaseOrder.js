@@ -6,6 +6,7 @@ import { CartContext } from "../contexts/CartContext";
 import { Link } from "react-router-dom";
 
 import ReactWhatsapp from "react-whatsapp";
+import Form from "../components/Form";
 
 const PurchaseOrder = () => {
   // Data cart
@@ -33,74 +34,7 @@ const PurchaseOrder = () => {
     <section className=" min-h-[65vh] flex flex-col items-center justify-center">
       <h1 className="w-full text-center font-extrabold text-4xl text-tertiary my-8">Orden de Compra</h1>
       <p className="w-full font-extrabold text-xl text-tertiary text-left mb-4">Datos de Envío</p>
-      <form className="w-full mx-auto">
-        <div className="flex flex-wrap -mx-3 mb-6">
-          <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-            <label
-              className="block  text-secondary text-lg mb-2"
-              htmlFor="firstName"
-            >
-              Nombres:
-            </label>
-            <input
-              className="appearance-none block w-full  border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:border-gray-400"
-              id="firstName"
-              type="text"
-              onChange={handleBuy}
-            />
-            {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
-          </div>
-          <div className="w-full md:w-1/2 px-3">
-            <label
-              className="block  text-secondary text-lg mb-2"
-              htmlFor="lastName"
-            >
-              Apellidos:
-            </label>
-            <input
-              className="appearance-none block w-full  border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:border-gray-400"
-              id="lastName"
-              type="text"
-              onChange={handleBuy}
-            />
-          </div>
-        </div>
-        <div className="flex flex-wrap -mx-3 mb-6">
-          <div className="w-full px-3">
-            <label
-              className="block  text-secondary text-lg mb-2"
-              htmlFor="address"
-            >
-              Dirección:
-            </label>
-            <input
-              className="appearance-none block w-full  border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:border-gray-400"
-              id="address"
-              type="text"
-              onChange={handleBuy}
-            />
-          </div>
-        </div>
-        <div className="flex flex-wrap -mx-3 mb-6">
-          <div className="w-full px-3">
-            <label
-              className="block  text-secondary text-lg mb-2"
-              htmlFor="comments"
-            >
-              Comentarios, preguntas y/o requerimientos adicionales:
-            </label>
-            <textarea
-              className="appearance-none block w-full  border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:border-gray-400 h-40"
-              id="comments"
-              onChange={handleBuy}
-            />
-            {/* <p className="text-gray-600 text-xs italic">
-            Make it as long and as crazy as you'd like
-          </p> */}
-          </div>
-        </div>
-      </form>
-
+      <Form handleBuy={handleBuy} ></Form>
     </section>
 
     {/* summary shopping cart*/}
@@ -158,11 +92,11 @@ const PurchaseOrder = () => {
 
         <ReactWhatsapp
           className="bg-primary text-secondary px-4 py-2 rounded-sm font-semibold w-48"
-          number="57-301-649-0791"
-          message={`¡Hola! Estoy interesad@ en relizar el siguiente pedido: \n \n *Resumen de Compra:*\n${cart.map((product) =>
-            " - _Título: " + product.title + ", cantidad: " + product.amount + ", subtotal: " + Intl.NumberFormat("es-ES").format(product.price * product.amount) + "_"
-          ).join("\n")} \n Total: $${Intl.NumberFormat("es-ES").format(total)} COP \n \n *Datos de Envío:* \n - _Nombre: ${form.firstName} ${form.lastName}_ \n - _Dirección: ${form.address}_ \n - _Comentarios: ${form.comments}_`} >
-          Compar
+          number="57-315-751-3152"
+          message={`¡Hola! Estoy interesad@ en realizar el siguiente pedido: \n \n *Resumen de Compra:*\n${cart.map((product) =>
+            " - Título: " + product.title + ", cantidad: " + product.amount + ", subtotal: " + Intl.NumberFormat("es-ES").format(product.price * product.amount)
+          ).join("\n")} \n Total: $${Intl.NumberFormat("es-ES").format(total)} COP \n \n *Datos de Envío:* \n - Nombre: ${form.firstName} ${form.lastName} \n - Dirección: ${form.address}\n - Comentarios: ${form.comments}`} >
+          Comprar
         </ReactWhatsapp>
 
       </div>

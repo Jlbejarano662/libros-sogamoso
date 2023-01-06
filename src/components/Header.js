@@ -9,6 +9,8 @@ import { CartContext } from "../contexts/CartContext";
 import { Link } from "react-router-dom";
 // icons
 import { BsList } from "react-icons/bs";
+// import styles
+import "./Header.css"
 
 const Header = () => {
   const { isOpen, setIsOpen } = useContext(SidebarContext);

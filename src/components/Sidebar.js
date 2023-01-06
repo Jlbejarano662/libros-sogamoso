@@ -58,7 +58,9 @@ const Sidebar = () => {
       </div>
       <div className="w-full flex justify-center my-4">
         <Link to={"/purchaseOrder"}>
-        <button className="bg-primary text-secondary px-4 py-2 rounded-sm font-semibold w-48">
+        <button 
+        onClick={handleClose}
+        className="bg-primary text-secondary px-4 py-2 rounded-sm font-semibold w-48">
           Continuar
         </button>
         </Link>

@@ -5,8 +5,8 @@ import { useParams } from "react-router-dom";
 import { CartContext } from "../contexts/CartContext";
 // import product context
 import { ProductContext } from "../contexts/ProductContext";
-// impor filter
-import {Filter} from "../components/Filter"
+// import styles
+import "./ProductDetails.css"
 
 const ProductDetails = () => {
   // get the product id from the url
@@ -45,7 +45,7 @@ const ProductDetails = () => {
 
   return (
     <section className="mt-14 lg:mt-8 min-h-[65vh] flex items-center">
-      <div className="container mx-auto">
+      <div className="container mx-auto lg:py-8">
         {/* Author, title, ISB, price*/}
         <div className="text-left mt-8 lg:mt-0">
           <p className="uppercase text-xs lg:text-sm">{author}</p>
@@ -58,7 +58,7 @@ const ProductDetails = () => {
         {/* image & text wrapper */}
         <div className="flex flex-col lg:flex-row items-start">
           {/* image */}
-          <div className="flex flex-1 justify-center items-center my-8 lg:mb-0">
+          <div className="flex w-full md:w-auto justify-center items-center my-8 lg:mb-0">
             <img
               className="max-w-[100%] lg:max-w-sm"
               src={image}
