@@ -1,10 +1,14 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 // import useParams
 import { useParams } from "react-router-dom";
+// import Link
+import { Link } from "react-router-dom";
 // import cart context
 import { CartContext } from "../contexts/CartContext";
 // import product context
 import { ProductContext } from "../contexts/ProductContext";
+// import page not found
+import PageNotFound from "../components/PageNotFound";
 // import styles
 import "./ProductDetails.css"
 
@@ -14,12 +18,13 @@ const ProductDetails = () => {
 
   // data products
   const { products } = useContext(ProductContext);
-  // cart
+  // data cart
   const { addToCart } = useContext(CartContext);
-  
-  // tabs
+
+  // tabs state
   const [toggleState, setToggleState] = useState(1);
-  // tabs
+
+  // update tabs state, shows the selected tab and hides the rest
   const toggleTab = (index) => {
     setToggleState(index);
   };
@@ -27,22 +32,20 @@ const ProductDetails = () => {
   // get the single product based on the id
   const product = products.find((item) => {
     return item.id === parseInt(id);
+
   });
 
-  // if product is not found
+  // if product is not found error message displayed
   if (!product) {
     return (
-      <section className="h-screen flex justify-center items-center">
-        Cargando...
-      </section>
+      <PageNotFound/>
     );
   }
 
   // destructure product
   const { title, price, description, image, ISBN, author } = product;
 
-  
-
+  // HTML
   return (
     <section className="mt-14 lg:mt-8 min-h-[65vh] flex items-center">
       <div className="container mx-auto lg:py-8">
@@ -108,14 +111,14 @@ const ProductDetails = () => {
                 </div>
               </div>
             </div>
-            {/* add to cart */}
+            {/* add to cart product event on click */}
             <div className="flex justify-center">
-            <button
-              className="bg-[#FBD111] text-[#403E41] px-4 py-2 rounded-sm  text-xl mt-4 mb-8 lg:mb-0"
-              onClick={() => addToCart(product, product.id)}
-            >
-              Añadir al Carrito
-            </button>
+              <button
+                className="bg-[#FBD111] text-[#403E41] px-4 py-2 rounded-sm  text-xl mt-4 mb-8 lg:mb-0"
+                onClick={() => addToCart(product, product.id)}
+              >
+                Añadir al Carrito
+              </button>
             </div>
 
           </div>

@@ -6,6 +6,7 @@ import { IoMdClose, IoMdAdd, IoMdRemove } from "react-icons/io";
 //import cart context
 import { CartContext } from "../contexts/CartContext";
 
+//receives a product as a prop
 const CartItem = ({ item }) => {
 
   // get the shopping cart methods
@@ -58,7 +59,7 @@ const CartItem = ({ item }) => {
               $ {Intl.NumberFormat("es-ES").format(price)}
             </div>
             {/* final price */}
-            {/* make the price at 2 decimals */}
+            {/* make the price at COP format */}
             <div className="flex-1 flex justify-end items-center text-[#403E41] font-bold">
               {"$ " + Intl.NumberFormat("es-ES").format(price * amount)}
             </div>

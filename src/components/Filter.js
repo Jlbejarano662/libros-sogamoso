@@ -1,46 +1,20 @@
 import React, { useState } from "react";
 
-const Filter = ({ products, setLeakedData }) => {
-
-  // category selected
-  const [category, setCategory] = useState({
-    Ficcion: false,
-    RomanceYDrama: false,
-    AutoayudaYFinanzasPersonales: false,
-    infantiles: false,
-  });
-
-
-
-  //event filter
-  const handleOnChecked = (e) => {
-    setCategory({
-      ...category,
-      [e.target.value]: e.target.checked,
-    });
-
-    if (e.target.checked || e.target.id === "categories") {
-      const resultCategory = products.filter(
-        (item) => item.category === e.target.value
-      );
-
-      setLeakedData([...resultCategory]);
-    } else {
-      const resultCategory = products;
-      setLeakedData([...resultCategory]);
-    }
-  };
-
+/* receives as parameter the handleOnChecked method that filters 
+the information each time a radio button (desktop) or 
+option (desktop) changes its status. */
+const Filter = ({ handleOnChecked }) => {
   //HTML
   return (<>
     <section className="md:w-[50%] flex justify-center my-8 lg:hidden items-center">
+      {/* Tablet and Mobile Filter*/}
       <select
         onChange={handleOnChecked}
         id="categories"
         className=" appearance-none block  border border-[#e4e4e4]  rounded py-3 px-4 leading-tight focus:outline-none focus:border-gray-400"
       >
         <option>
-          Categorías
+          Todas las Categorías
         </option>
         <option value="Ficcion">Ficción</option>
         <option value="RomanceYDrama">Romance y drama</option>
@@ -50,11 +24,25 @@ const Filter = ({ products, setLeakedData }) => {
         <option value="Infantiles">Infantiles</option>
       </select>
     </section>
+    {/* Desktop Filter*/}
     <section className="mr-2 hidden lg:block">
       {/* Categories */}
       <h2 className="font-extrabold text-xl text-tertiary text-left mb-4 ">
         Categorías
       </h2>
+      {/* alls categories */}
+      <div className="text-lg mb-2 flex">
+        <input
+          onChange={handleOnChecked}
+          className="mr-4"
+          type="radio"
+          name="categories"
+          defaultChecked
+        />
+        <label>
+          Todas
+        </label>
+      </div>
       {/* Ficción */}
       <div className="text-lg mb-2 flex">
         <input
