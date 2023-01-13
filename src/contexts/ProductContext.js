@@ -19,8 +19,6 @@ const ProductProvider = ({ children }) => {
     // maps the products and extracts a single product for each category, saves the result in a categories
     const categoriesMap = data.reduce((categories, item) => categories.set(item.category, item), new Map);
     setCategories([...categoriesMap.values()])
-
-
   };
 
   // fetch products each time the component is rendered

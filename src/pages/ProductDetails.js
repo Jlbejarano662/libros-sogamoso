@@ -120,7 +120,6 @@ const ProductDetails = () => {
                 Añadir al Carrito
               </button>
             </div>
-
           </div>
         </div>
       </div>

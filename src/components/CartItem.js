@@ -5,9 +5,13 @@ import { Link } from "react-router-dom";
 import { IoMdClose, IoMdAdd, IoMdRemove } from "react-icons/io";
 //import cart context
 import { CartContext } from "../contexts/CartContext";
+// import sidebar context
+import { SidebarContext } from "../contexts/SidebarContext";
 
 //receives a product as a prop
 const CartItem = ({ item }) => {
+  // get sidebar context --> sidebar open/closed
+  const { isOpen, handleClose } = useContext(SidebarContext);
 
   // get the shopping cart methods
   const { removeFromCart, increaseAmount, decreaseAmount} = useContext(CartContext);
@@ -20,7 +24,7 @@ const CartItem = ({ item }) => {
     <div className="flex gap-x-4 py-2 lg:px-6 border-b  w-full font-light text-[#403E41]">
       <div className="w-full min-h-[150px] flex items-center gap-x-4">
         {/* image */}
-        <Link to={"/product/" + id}>
+        <Link to={"/product/" + id} onClick={handleClose}>
           <img className="max-w-[80px]" src={image} alt="" />
         </Link>
         <div className="w-full justify-between mb-2">
@@ -30,6 +34,7 @@ const CartItem = ({ item }) => {
             <Link
               to={"/product/" + id}
               className="text-sm font-semibold max-w-[240px] text-[#403E41] hover:underline"
+              onClick={handleClose}
             >
               {title}
             </Link>

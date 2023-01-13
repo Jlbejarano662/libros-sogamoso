@@ -30,7 +30,7 @@ const PurchaseOrder = () => {
   // HTML
   return (<div className="container mt-14 lg:mt-8 mx-auto mb-8">
      
-    {/* Form */}
+    {/* summary shopping cart*/}
     <section  className=" py-2 w-full font-light text-[#403E41] ">
     <h1 className="w-full text-center font-extrabold text-4xl text-tertiary my-8">Orden de Compra</h1>
       <p className="w-full font-extrabold text-xl text-tertiary text-left mb-4">Resumen de Compra ({itemAmount})</p>
@@ -79,11 +79,8 @@ const PurchaseOrder = () => {
         <span className="mr-2">Total:</span> ${" "}
         {Intl.NumberFormat("es-ES").format(total)}
       </div>
-
-
     </section>
-
-    {/* summary shopping cart*/}
+    {/* Form */}
     <section className="flex flex-col items-center justify-center py-2 ">
       <p className="w-full font-extrabold text-xl text-tertiary text-left mb-4">Datos de Envío</p>
       {/* Render form component*/}
