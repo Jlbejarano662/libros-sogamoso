@@ -25,7 +25,7 @@ const Filter = ({ handleOnChecked }) => {
       </select>
     </section>
     {/* Desktop Filter*/}
-    <section className="mr-2 max-w-[25%] hidden lg:block">
+    <section className="mr-2 hidden lg:block">
       {/* Categories */}
       <h2 className="font-extrabold text-xl text-tertiary text-left mb-4 ">
         Categorías
