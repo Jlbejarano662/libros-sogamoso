@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 
 // import product context
 import { ProductContext } from "../contexts/ProductContext";
@@ -6,6 +6,7 @@ import { ProductContext } from "../contexts/ProductContext";
 import Product from "../components/Product";
 import Filter from "../components/Filter";
 import PageNotFound from "../components/PageNotFound";
+import Pagination from "../components/Pagination";
 
 const Categories = () => {
   // get products from product context
@@ -20,13 +21,22 @@ const Categories = () => {
     infantiles: false,
   });
 
-  //data filtering
-  const [leakedData, setLeakedData] = useState(products);
+  //data filtering & pagination
+
+
+  const [leakedData, setleakedData] = useState(products);
+  const [currentPage, setCurrentPage] = useState(1);
+  const postsPerPage = 10;
+
+  //update leakedData each time render component ProductContext
+  useEffect(() => {
+    setleakedData([...products]);
+  }, [products]);
 
   // if products is not found show a error message
   if (products.length === 0) {
     return (
-      <PageNotFound/>
+      <PageNotFound />
     );
   }
 
@@ -45,14 +55,21 @@ const Categories = () => {
         (item) => item.category === e.target.value
       );
       // update leakedData with the result of filtering the products
-      setLeakedData([...resultCategory]);
-      // otherwise
-    } else {
-      // update leakedData with all products
-      const resultCategory = products;
-      setLeakedData([...resultCategory]);
+      setleakedData([...resultCategory]);
+      if (resultCategory.length === 0) {
+        setleakedData([...products]);
+      } else {
+        setleakedData([...resultCategory]);
+      }
+      setCurrentPage(1);
     }
   };
+
+
+
+  const lastPostIndex = currentPage * postsPerPage;
+  const firstPostIndex = lastPostIndex - postsPerPage;
+  const currentPosts = leakedData.slice(firstPostIndex, lastPostIndex);
 
   //HTML
   return (
@@ -62,24 +79,32 @@ const Categories = () => {
         <h1 className="w-full text-center font-extrabold text-4xl text-tertiary my-8">
           Categorías
         </h1>
+
         <div className="container mx-auto lg:flex items-start min-h-screen">
           {/* renders the filter component */}
           <Filter handleOnChecked={handleOnChecked} />
           {/* products */}
-          <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[30px] max-w-sm mx-auto md:max-w-none md:mx-0">
-            {/* si aún no se ha filtrado la información se muestran todos los productos, 
+          <div>
+
+            <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[30px] max-w-sm  mx-auto md:max-w-none md:mx-0">
+              {/* si aún no se ha filtrado la información se muestran todos los productos, 
             en caso contrario se muestra los productos filtrados */}
-            {leakedData.length === 0
-              ? products.map((product) => {
-                {/* Render the product and its features */ }
-                return <Product product={product} key={product.id} />;
-              })
-              : leakedData.map((product) => {
-                {/* Render the product and its features */ }
-                return <Product product={product} key={product.id} />;
-              })}
-          </section>
+              {currentPosts.map((product) => {
+                  {/* Render the product and its features */ }
+                  return <Product product={product} key={product.id} />;
+                })}
+            </section>
+
+            <Pagination
+            totalPosts={leakedData.length}
+            postsPerPage={postsPerPage}
+            setCurrentPage={setCurrentPage}
+            currentPage={currentPage}
+          />
+          </div>
+
         </div>
+
       </div>
     </>
   );

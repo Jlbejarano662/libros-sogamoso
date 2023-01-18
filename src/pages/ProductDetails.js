@@ -1,8 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 // import useParams
 import { useParams } from "react-router-dom";
-// import Link
-import { Link } from "react-router-dom";
 // import cart context
 import { CartContext } from "../contexts/CartContext";
 // import product context
@@ -13,37 +11,50 @@ import PageNotFound from "../components/PageNotFound";
 import "./ProductDetails.css"
 
 const ProductDetails = () => {
+  // data products
+  const { products } = useContext(ProductContext);
+  console.log(useContext(ProductContext));
   // get the product id from the url
   const { id } = useParams();
 
-  // data products
-  const { products } = useContext(ProductContext);
+
   // data cart
   const { addToCart } = useContext(CartContext);
 
   // tabs state
   const [toggleState, setToggleState] = useState(1);
+  // tabs state
+  const [product, setProduct] = useState([]);
 
   // update tabs state, shows the selected tab and hides the rest
   const toggleTab = (index) => {
     setToggleState(index);
   };
 
-  // get the single product based on the id
-  const product = products.find((item) => {
-    return item.id === parseInt(id);
 
+
+  //update total price each time render component
+  useEffect(() => {
+    // get the single product based on the id
+    const productA = products.find((item) => {
+      return item.id === parseInt(id);
+
+    });
+    setProduct(productA);
+    console.log(id);
   });
+
 
   // if product is not found error message displayed
   if (!product) {
     return (
-      <PageNotFound/>
+      <PageNotFound />
     );
   }
 
   // destructure product
   const { title, price, description, image, ISBN, author } = product;
+
 
   // HTML
   return (
