@@ -23,7 +23,7 @@
     "id": 3,
     "title": "Misery",
     "price": 38000,
-    "description": "Misery es un relato obsesivo que sólo podía escribir Stephen King.\nPaul Shledon es un escritor que sufre un grave accidente y recobra el conocimiento en una apartada casa en la que vive una misteriosa mujer, corpulenta y de extraño carácter. Se trata de una antigua enfermera, involucrada en varias muertes misteriosas ocurridas en diversos hospitales. Fanática de un personaje de una serie de libros que él ha decido dejar de escribir, está dispuesta a hacer todo lo necesario para «convencerlo» de que retome la escritura.\nEsta mujer es capaz de los mayores horrores, y Paul, con las piernas rotas y entre terribles dolores, tendrá que luchar por su vida.\nDe nuevo, Stephen King logró hacerse con el primer puesto de las listas de ventas con Misery, novela que más tarde sería llevada al cine con gran éxito.",
+    "description": "Misery es un relato obsesivo que sólo podía escribir Stephen King.Paul Shledon es un escritor que sufre un grave accidente y recobra el conocimiento en una apartada casa en la que vive una misteriosa mujer, corpulenta y de extraño carácter. Se trata de una antigua enfermera, involucrada en varias muertes misteriosas ocurridas en diversos hospitales. Fanática de un personaje de una serie de libros que él ha decido dejar de escribir, está dispuesta a hacer todo lo necesario para «convencerlo» de que retome la escritura.Esta mujer es capaz de los mayores horrores, y Paul, con las piernas rotas y entre terribles dolores, tendrá que luchar por su vida.De nuevo, Stephen King logró hacerse con el primer puesto de las listas de ventas con Misery, novela que más tarde sería llevada al cine con gran éxito.",
     "category": "Ficcion",
     "image": "https://drive.google.com/uc?export=view&id=14vJmlVb2QqHT5V932nHh_6o784c560Ap",
     "author": "Stephen King",
@@ -141,7 +141,7 @@
   },
   {
     "id": 15,
-    "title": "Como Ganar Amigos e Influir Sobre las Personas",
+    "title": "Cómo Ganar Amigos e Influir Sobre las Personas",
     "price": 38000,
     "description": "El contenido del libro esta basado en principios básicos, fundamentales que sin lugar a dudas mejoran las relaciones humanas en general.",
     "category": "AutoayudaYFinanzasPersonales",
@@ -200,6 +200,16 @@
     "ISBN": "0000000000"
   },
   {
+    "id": 21,
+    "title": "Todo lo que Somos Juntos",
+    "price": 52000,
+    "description": "Tras el éxito de Todo lo que nunca fuimos llega el desenlace de la Bilogía «Deja que ocurra». ¿Qué pasará con Axel y Leah?Han pasado tres años desde la última vez que se vieron. Ahora, Leah está a punto de cumplir su sueño de exponer en una galería.Y, pese al pasado, Axel necesita formar parte de un momento como ese.Cuando sus caminos vuelven a cruzarse, Leah tiene que tomar decisiones que pueden cambiarlo todo, porque, a pesar de lo que ocurrió, los recuerdos de toda su vida siguen ahí; intactos, bonitos, únicos. Colándose en cada grieta que aún no ha cerrado.Porque él sigue siendo el chico que aún no ha olvidado.Porque es el mar, noches estrelladas y vinilos de los Beatles.Porque a veces basta un «deja que ocurra» para tenerlo todo.",
+    "category": "RomanceYDrama",
+    "image": "https://drive.google.com/uc?export=view&id=1kjcHfuymAAb7b3ItlSoKwY-J4mtIEZRc",
+    "author": "Alice Kellen",
+    "ISBN": "0000000000"
+  },
+  {
     "id": 22,
     "title": "El Mapa de los Anhelos",
     "price": 60000,
@@ -233,7 +243,7 @@
     "id": 25,
     "title": "Padre Rico, Padre Pobre",
     "price": 35000,
-    "description": "Padre Rico, padre Pobre lo ayudará a: \n • Derribar el mito de que usted necesita tener un ingreso elevado para hacerse rico.\n • Desafiar la creencia de que su casa es una inversión.\n • Mostrar a los padres por qué no confiar en el sistema escolar para la enseñanza de sus hijos acerca del dinero. \n • Definir de una vez y para siempre qué es una inversión, y qué es una obligación.\n • Mostrar qué enseñar a los hijos acerca del dinero para su futuro éxito financiero.\n Robert Kiyosaki transformó radicalmente la forma en que millones de personas alrededor del mundo perciben el concepto del dinero con su libro Padre rico, padre pobre. Con perspectivas que contradicen el conocimiento convencional, Robert se ha ganado una gran reputación por hablar claro, ser irreverente y tener valor. Es reconocido alrededor del mundo como un defensor apasionado de la educación financiera.\"La razón principal por la cual las personas luchan financieramente es porque han pasado años en los colegios, pero no aprendieron nada acerca del dinero. El resultado es que aprenden a trabajar por el dinero... pero nunca aprenden a tener dinero trabajando para ellos.\n \"Robert KiyosakiPadre rico, padre pobre - El libro de finanzas personales n.°1 del mundo.\"Padre rico, padre pobre es el punto de partida para quien quiera tomar el control de su futuro financiero.\"",
+    "description": "Padre Rico, padre Pobre lo ayudará a: • Derribar el mito de que usted necesita tener un ingreso elevado para hacerse rico. • Desafiar la creencia de que su casa es una inversión. • Mostrar a los padres por qué no confiar en el sistema escolar para la enseñanza de sus hijos acerca del dinero. • Definir de una vez y para siempre qué es una inversión, y qué es una obligación. • Mostrar qué enseñar a los hijos acerca del dinero para su futuro éxito financiero. Robert Kiyosaki transformó radicalmente la forma en que millones de personas alrededor del mundo perciben el concepto del dinero con su libro Padre rico, padre pobre. Con perspectivas que contradicen el conocimiento convencional, Robert se ha ganado una gran reputación por hablar claro, ser irreverente y tener valor. Es reconocido alrededor del mundo como un defensor apasionado de la educación financiera.\"La razón principal por la cual las personas luchan financieramente es porque han pasado años en los colegios, pero no aprendieron nada acerca del dinero. El resultado es que aprenden a trabajar por el dinero... pero nunca aprenden a tener dinero trabajando para ellos. \"Robert KiyosakiPadre rico, padre pobre - El libro de finanzas personales n.°1 del mundo.\"Padre rico, padre pobre es el punto de partida para quien quiera tomar el control de su futuro financiero.\"",
     "category": "AutoayudaYFinanzasPersonales",
     "image": "https://drive.google.com/uc?export=view&id=1K12jbl_IbhwzwZ0qQc82hIg-b06BMG3h",
     "author": "Robert T.Kiyosaki",
@@ -247,6 +257,146 @@
     "category": "AutoayudaYFinanzasPersonales",
     "image": "https://drive.google.com/uc?export=view&id=1sDJMs6J_vBXIiKR03wBTT92S2vcGUMxO",
     "author": "Axel Kaiser",
+    "ISBN": "0000000000"
+  },
+  {
+    "id": 27,
+    "title": "El Camino del Lobo",
+    "price": 42000,
+    "description": "Ya conoces al Lobo de Wall Street. Ahora conoce sus secretos. La persuasión es tu mejor arma: es la clave para vender tus productos o servicios, para cerrar tratos y para destacar entre los demás y defender tus intereses. Jordan Belfort no sólo ha dominado el método para persuadir a los demás; como consultor profesional, el célebre Lobo de Wall Street también ha instruido a cientos de personas en los pasos a seguir para convertirse en un negociador exitoso, tanto en el ámbito de la carrera como en el de la vida diaria. Ahora, Belfort comparte por primera vez con una nueva generación de lectores el sistema que usó para llegar a la cima. El camino del Lobo tiene las claves para recuperarte de los malos años, desatar el poder de la persuasión, cerrar todos tus tratos importantes y convertirte en una estrella de la comunicación y la negociación. Descubre tu mayor herramienta en los negocios y en la vida: la persuasión.",
+    "category": "AutoayudaYFinanzasPersonales",
+    "image": "https://drive.google.com/uc?export=view&id=1Xjx-afoFOPaCsJmRxiNzb0U-sBRsCLSq",
+    "author": "Jordan Belfort",
+    "ISBN": "0000000000"
+  },
+  {
+    "id": 28,
+    "title": "El Valor de las Cosas",
+    "price": 50000,
+    "description": "El valor de las cosas. Por Mariana Mazzucato. Publicado por taurus. Quién produce y quién gana en la economía global. Un libro que cuestiona y obliga a pensar sobre la verdadera realidad de la economía.Recomendado del librero.¿Quién crea realmente la riqueza? ¿Qué actividades la impulsan? ¿Cuáles se limitan a extraerla? ¿Cuáles la destruyen? Nuestras economías tienden a premiar la extracción de valor antes que su creación -el proceso productivo que verdaderamente impulsa una economía y una sociedad saludables-, y la diferencia entre ambos conceptos se ha desdibujado de manera notable. A partir de ejemplos que van desde Silicon Valley hasta el sector financiero pasando por las grandes farmacéuticas, Mariana Mazzucato muestra de manera magistral cómo las nociones borrosas que tenemos del valor han permitido a ciertos actores de la economía retratarse a sí mismos como generadores de valor, mientras que en realidad se limitan a mover el existente o, lo que es peor, lo destruyen.",
+    "category": "AutoayudaYFinanzasPersonales",
+    "image": "https://drive.google.com/uc?export=view&id=1qKBGgzAE9gs4dP_vui9rZDZLjYmDbaPl",
+    "author": "Mariana Mazzucato",
+    "ISBN": "0000000000"
+  },
+  {
+    "id": 29,
+    "title": "Esto es Marketing",
+    "price": 40000,
+    "description": "El marketing lleva tanto tiempo entre nosotros que lo damos por hecho. Como el pez que no entiende el agua en el que vive, no vemos lo que realmente está pasando y no nos damos cuenta de cómo nos está cambiando. Ha llegado la hora de hacer algo más. De mejorar las cosas. De provocar el cambio que te gustaría ver en el mundo.",
+    "category": "AutoayudaYFinanzasPersonales",
+    "image": "https://drive.google.com/uc?export=view&id=1ukNq1-upRmcLhDFthKQoHNxWI0eyV4iG",
+    "author": "Seth Godin",
+    "ISBN": "0000000000"
+  },
+  {
+    "id": 30,
+    "title": "Un Inmueble al año no Hace Daño",
+    "price": 40000,
+    "description": "Invertir en bienes raíces es fácil si uno dispone del dinero para ello. Pero para convertirlo en un negocio rentable el dinero no basta, se requiere conocimiento y actitud. Dicho en otras palabras, no se trata de lo que tengas en tu bolsillo, sino de lo que tengas en tu cabeza. Hay que saber qué comprar, dónde, a qué precio y con qué condiciones. Asimismo, hay que saber qué preguntar y, sobre todo, qué preguntarse a uno mismo.",
+    "category": "AutoayudaYFinanzasPersonales",
+    "image": "https://drive.google.com/uc?export=view&id=1N8jk9N_CJNL2bpWaY9MCY7fgh4Jh4ugE",
+    "author": "Carlos Devis",
+    "ISBN": "0000000000"
+  },
+  {
+    "id": 31,
+    "title": "Manifiesto Para los Héroes de Cada día",
+    "price": 45000,
+    "description": "Durante más de veinticinco años, Robin Sharma, el legendario experto en liderazgo y en excelencia, ha enseñado discretamente a titanes de los negocios, a grandes del deporte profesional y a superestrellas del mundo del espectáculo un revolucionario sistema que los ha ayudado a convertir sus máximas aspiraciones en resultados palpables a diario. Ahora, en Manifiesto para los héroes de cada día -su obra maestra-, el innovador Robin Sharma ha destilado los principios fundamentales, los protocolos y las tácticas de su método de mentoring y ha creado una obra valiosísima que es al mismo tiempo un compendio de estrategias para alcanzar una productividad inagotable, un manual para llevar una vida incomparable, y una guía universal para llegar a ser un líder espiritual capaz de cargar con el mundo sobre los hombros. En las páginas de este libro absolutamente único descubrirás: - Pautas reales sobre cómo las personas más creativas, productivas y prósperas del planeta adquieren hábitos insuperables, controlan sus días y organizan su vida al más alto nivel. - Prácticas poderosas para mejorar la energía, aumentar la vitalidad y prolongar la longevidad a fin de dar forma al genio que eres. - Un modelo demostrado para realizar trabajos excepcionales que lideren tu sector e iluminen a futuras generaciones. -Técnicas basadas en la neurociencia para convertir problemas en triunfos, temores en acicates y sufrimientos del pasado en heroísmo cotidiano. - Una sabiduría inusual (y alcanzada con esfuerzo) para mejorar la vivacidad, incubar una serenidad sublime y dignificar la libertad espiritual que crea una vida hermosa. «Hoy, y cada día a partir de ahora de tu vida única y gloriosa, brillante, luminosa y de gran ayuda para muchos, conserva con uñas y dientes la libertad ilimitada para dar forma al futuro, materializar las ambiciones y magnificar las aportaciones de tus sueños, intereses y compromisos.» Manifiesto para los héroes de cada día.",
+    "category": "AutoayudaYFinanzasPersonales",
+    "image": "https://drive.google.com/uc?export=view&id=1tJr70M8yEbHcqd_DVxq_X4ChIsqCEuxp",
+    "author": "Robin S. Sharma",
+    "ISBN": "0000000000"
+  },
+  {
+    "id": 32,
+    "title": "El sol y sus Flores",
+    "price": 40000,
+    "description": "Segundo y poderoso poemario de esta autora best seller. Dividido en cinco movimientos (marchitarse; caer; enraizar; crecer; florecer), este poemario se desliza desde las profundidades de un desamor y el dolor que conlleva hasta la fuerza y la alegría que pueden florecer tras ese sufrimiento. Un vibrante y trascendental viaje sobre el crecimiento y la curación, la descendencia y el honor por las raíces de uno, la expatriación y la búsqueda del hogar en uno mismo.«Rupi Kaur está derrumbando los muros del sector editorial», The New York Times.«Otras maneras de usar la boca es, desde hace tiempo, el libro más vendido en Estados Unidos. Pero le ha salido un duro competidor: El sol y sus flores, su segundo poemario», Los Angeles Times.",
+    "category": "Infantiles",
+    "image": "https://drive.google.com/uc?export=view&id=1gwo00raHRsF6bOreabRAUExBVqDbF5In",
+    "author": "Rupi Kaur",
+    "ISBN": "0000000000"
+  },
+  {
+    "id": 33,
+    "title": "Todo lo que Necesito Existe ya en mí",
+    "price": 40000,
+    "description": "Con una sensibilidad exquisita, Rupi Kaur aborda en Todo lo que necesito existe ya en mí algunos de los temas por los que se dio a conocer con sus anteriores obras como el feminismo, el trauma, la pérdida o el amor, pero en esta ocasión da un paso más allá y revela, en un ejercicio único de generosidad y honestidad, experiencias muy personales como el modo en que ha lidiado los últimos años con la depresión, el éxito o la presión a la que se ha visto sometida. Capaz de traducir en palabras sensaciones y sentimientos complejos, exhibe además una notable sabiduría para desgranar males de nuestro tiempo como la autoexigencia, las enfermedades mentales o las relaciones tóxicas.",
+    "category": "Infantiles",
+    "image": "https://drive.google.com/uc?export=view&id=10aki2YkalWozyvaSkurf_WRVxSnNi6ph",
+    "author": "Rupi Kaur",
+    "ISBN": "0000000000"
+  },
+  {
+    "id": 34,
+    "title": "Viaje al Centro de la Tierra",
+    "price": 25000,
+    "description": "Una de las novelas más recordadas de Julio Verne, Viaje al centro de la Tierra relata la aventura más prodigiosa de la imaginación: un viaje a las entrañas de la Tierra. Un profesor de mineralogía, el cejudo Otto Lidenbrock, halla un antiquísimo pergamino islandés del siglo XII, que contiene un criptograma. Tras descubrir el mensaje cifrado, el profesor Lidenbrock inicia la más audaz de las expediciones humanas, que pretende mantener en secreto. La expedición atraviesa la Tierra desde Islandia hasta el mediterráneo y desciende hasta el centro mismo de la Tierra, en la que otra época histórica transcurre. Los aventureros, el profesor, su sobrino huérfano y un cazador islandés, son testigos de los fenómenos más extraños en las entrañas del planeta, mientras el mundo entero, gracias a las indiscreciones de la criada, espera noticias acerca de la suerte de los expedicionarios, con cierto escepticismo. Versión abreviada de Gisela Silva.",
+    "category": "Infantiles",
+    "image": "https://drive.google.com/uc?export=view&id=1D9Lp508nr7pp3yoZJgk7WyaepPPfPSs3",
+    "author": "Julio Verne",
+    "ISBN": "0000000000"
+  },
+  {
+    "id": 35,
+    "title": "Crónicas de Narnia: El Sobrino del Mago",
+    "price": 60000,
+    "description": "Narnia, un lugar por el que deambulan Bestias Parlantes..., donde aguarda una bruja..., donde un nuevo mundo está a punto de nacer. Dos amigos, víctimas del poder de unos anillos mágicos, son arrojados a otro mundo en el que una malvada hechicera intenta convertirlos en sus esclavos. Pero entonces aparece Aslan, y con su canción va hilando el tejido de un nuevo mundo que recibirá el nombre de Narnia.",
+    "category": "Infantiles",
+    "image": "https://drive.google.com/uc?export=view&id=1xJRPuvc-X4LchySd3Ue5Mebv_ZC2n-Lf",
+    "author": "C.S. Lewis",
+    "ISBN": "0000000000"
+  },
+  {
+    "id": 36,
+    "title": "Crónicas de Narnia: El León, la Bruja y el Ropero",
+    "price": 50000,
+    "description": "Abre la puerta y entra en un nuevo mundo. El león, la Bruja y el ropero es el segundo libro de la clásica serie de fantasía de C. S. Lewis, que ha cautivado a lectores de todas las edades con un lugar mágico y personajes inolvidables durante más de sesenta años.Cuatro hermanos aventureros-Peter, Susan, Edmund y Lucy Pevensie abrieron la puerta de ropero y entraron en la tierra de Narnia, una tierra congelada en invierno eterno esclavizada por el poder de la Bruja Blanca. Pero cuando casi pierden la esperanza, el regreso del gran león, Aslan, anuncia un gran cambio... y un gran sacrificio.Este libro es una lectura independiente, pero si quieres descubrir más acerca de Narnia, te recomendamos leer el resto de los libros de la serie Las Crónicas de Narnia.",
+    "category": "Infantiles",
+    "image": "https://drive.google.com/uc?export=view&id=19Aqmb-gnaBLguInvn3SEv4v8LLj-7Odn",
+    "author": "C.S. Lewis",
+    "ISBN": "0000000000"
+  },
+  {
+    "id": 37,
+    "title": "Harry Potter y la Piedra Filosofal",
+    "price": 60000,
+    "description": "«Las ilustraciones de Jim Kay me emocionaron profundamente. Me encanta su interpretación del mundo de Harry Potter, y para mí es un verdadero honor que haya aportado su talento a esta nueva edición.» J.?K. Rowling La vida de Harry Potter cambia para siempre el día que cumple once años, cuando el gigante de ojos negros y brillantes Rubeus Hagrid le entrega una carta y le revela noticias asombrosas: Harry Potter no es un chico normal y corriente, es un mago. Está a punto de comenzar una aventura extraordinaria... El prestigioso artista británico Jim Kay ha contribuido con su enorme talento en esta primera edición ilustrada del clásico de J.?K. Rowling. Un libro maravilloso y cautivador, una obra de gran valor tanto para fans incondicionales como para nuevos lectores.",
+    "category": "Infantiles",
+    "image": "https://drive.google.com/uc?export=view&id=139CoQ6ughVgDwRQzlm9mEW5O8NRTNeN9",
+    "author": "J. K. Rowling",
+    "ISBN": "0000000000"
+  },
+  {
+    "id": 38,
+    "title": "Charlie y la Fábrica de Chocolate",
+    "price": 30000,
+    "description": "Charlie y la fábrica de chocolate es una historia de Roald Dahl, el gran autor de literatura infantil.El señor Wonka, dueño de la magnífica fábrica de chocolate, ha escondido cinco billetes de oro en sus chocolatinas. Quienes los encuentren serán los elegidos para visitar la fábrica. Charlie tiene la fortuna de encontrar uno de esos billetes y, a partir de ese momento, su vida cambiará para siempre.",
+    "category": "Infantiles",
+    "image": "https://drive.google.com/uc?export=view&id=1SYHmfu7C7saUmkLx5Rj-retrt0D8KTaM",
+    "author": "Roald Dahl",
+    "ISBN": "0000000000"
+  },
+  {
+    "id": 39,
+    "title": "Alicia en el Pais de las Maravillas",
+    "price": 20000,
+    "description": "«He visto a menudo a un gato sin sonrisa —pensó Alicia—, pero no una sonrisa sin gato, es la cosa más curiosa que he visto en mi vida». Maestro del nonsense, Lewis Carroll traspasó en estos textos el umbral que separa la realidad del sueño y se adentró en un territorio sin leyes ni normas donde todo es posible. Alicia, los estrambóticos personajes del País de las Maravillas, los del otro lado del espejo y los pertenecientes a la tripulación en batida contra el Snark ponen así en entredicho todos y cada uno de los postulados lógicos en los que se asienta el mundo en que vivimos. Acompañado de las ilustraciones originales de John Tenniel, el presente volumen recoge las formidables traducciones de Luis Maristany, uno de los más consagrados expertos en la obra de Carroll que ha habido en nuestra lengua. A modo de apéndice, además, se incluye una selección de cartas del autor y un pormenorizado estudio de Nina Auerbach, catedrática emérita en la Universidad de Pennsylvania y reconocida especialista en Literatura Inglesa decimonónica.",
+    "category": "Infantiles",
+    "image": "https://drive.google.com/uc?export=view&id=1bMhqcQLo3awgcRZtwTfhCT05bL3LRHwT",
+    "author": "Lewis Carroll",
+    "ISBN": "0000000000"
+  },
+  {
+    "id": 40,
+    "title": "Matilda",
+    "price": 40000,
+    "description": "Matilda es una ávida lectora de solo cinco años. Sensible e inteligente, todos la admiran menos sus mediocres padres, que la consideran una inútil. Además, tiene poderes extraños y maravillosos... Un día, Matilda decide liberarse y empieza a emplearlos contra la abominable y cruel señorita Trunchbull.",
+    "category": "Infantiles",
+    "image": "https://drive.google.com/uc?export=view&id=12S3uEdIyqF4HwvGnK9iKjg2zAl9TiGI-",
+    "author": "Roald Dahl",
     "ISBN": "0000000000"
   }
 ]
