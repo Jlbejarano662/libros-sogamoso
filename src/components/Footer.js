@@ -32,7 +32,7 @@ const Footer = () => {
         <a href='https://wa.me/573242236489' className='flex my-2 items-baseline text-lg' target="_blank">
           {/* WhatsApp icon */}
           <BsWhatsapp className='mr-2 text-xl' />
-          3242236489
+          WhatsApp
         </a>
       </section>
       {/* contact section */}

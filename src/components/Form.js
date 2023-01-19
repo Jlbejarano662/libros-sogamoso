@@ -1,18 +1,19 @@
-import React from 'react';
+import React from "react";
 
 //receives as prop the handlebuy event
 const Form = ({ handleBuy }) => {
   //HTML
   return (
     <form className="w-full mx-auto">
-      <div className="flex flex-wrap -mx-3 mb-6">
+      <span className="text-[#dc3545]"> * Campo requerido </span>
+      <div className="flex flex-wrap -mx-3 mb-6 mt-4">
         {/*input for first name */}
         <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
           <label
             className="block  text-secondary text-lg mb-2"
             htmlFor="firstName"
           >
-            Nombres:
+            Nombres <span className="text-[#dc3545]"> * </span>:
           </label>
           <input
             className="appearance-none block w-full  border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:border-gray-400"
@@ -28,7 +29,7 @@ const Form = ({ handleBuy }) => {
             className="block  text-secondary text-lg mb-2"
             htmlFor="lastName"
           >
-            Apellidos:
+            Apellidos <span className="text-[#dc3545]"> * </span>:
           </label>
           <input
             className="appearance-none block w-full  border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:border-gray-400"
@@ -45,7 +46,7 @@ const Form = ({ handleBuy }) => {
             className="block  text-secondary text-lg mb-2"
             htmlFor="address"
           >
-            Dirección:
+            Dirección <span className="text-[#dc3545]"> * </span>:
           </label>
           <input
             className="appearance-none block w-full  border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:border-gray-400"

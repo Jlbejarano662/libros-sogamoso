@@ -5,9 +5,9 @@ const PageNotFound = () => {
     // HTML
     return (
         <section className="h-screen w-full flex flex-col justify-center items-center bg-secondary">
-            <h1 className="text-9xl font-extrabold text-white tracking-widest">404</h1>
+            <h1 className="text-9xl font-extrabold text-white tracking-wide">¡Oops!</h1>
             <div className="bg-primary px-2 text-sm rounded rotate-12 absolute">
-                Page Not Found
+                Algo salió mal
             </div>
             <button className="mt-5" onClick={() => window.location.replace("/")}>
                 <a

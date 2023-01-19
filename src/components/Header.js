@@ -12,6 +12,8 @@ import { BsList } from "react-icons/bs";
 // import styles
 import "./Header.css"
 
+import emptyCart from "../img/empty_cart.png"
+
 const Header = () => {
   // get sidebar context --> sidebar open/closed
   const { isOpen, setIsOpen } = useContext(SidebarContext);

@@ -13,7 +13,6 @@ import "./ProductDetails.css"
 const ProductDetails = () => {
   // data products
   const { products } = useContext(ProductContext);
-  console.log(useContext(ProductContext));
   // get the product id from the url
   const { id } = useParams();
 
@@ -33,7 +32,7 @@ const ProductDetails = () => {
 
 
 
-  //update total price each time render component
+  //update each time render component
   useEffect(() => {
     // get the single product based on the id
     const productA = products.find((item) => {
@@ -41,7 +40,6 @@ const ProductDetails = () => {
 
     });
     setProduct(productA);
-    console.log(id);
   });
 
 
@@ -72,7 +70,7 @@ const ProductDetails = () => {
         {/* image & text wrapper */}
         <div className="flex flex-col lg:flex-row items-start">
           {/* image */}
-          <div className="flex w-full md:w-auto justify-center items-center my-8 lg:mb-0">
+          <div className="flex w-full lg:w-auto justify-center items-center my-8 lg:mb-0">
             <img
               className="max-w-[100%] lg:max-w-sm"
               src={image}

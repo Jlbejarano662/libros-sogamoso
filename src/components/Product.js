@@ -8,7 +8,6 @@ import { CartContext } from "../contexts/CartContext";
 
 //receives a product as prop
 const Product = ({ product }) => {
-
   //get addToCart method from CartContext
   const { addToCart } = useContext(CartContext);
 
@@ -17,7 +16,7 @@ const Product = ({ product }) => {
 
   //HTML
   return (
-    <div>
+    <div className="lg:w-[250px] xl:w-[280px] lg:mx-auto">
       <div className="border border-[#e4e4e4] h-[300px] mb-4 relative overflow-hidden group transition">
         <div className="w-full h-full flex justify-center items-center">
           {/* product image */}
@@ -55,7 +54,9 @@ const Product = ({ product }) => {
       </Link>
       {/* price */}
       {/* make the price at COP format */}
-      <div className=" text-[#403E41]">$ {Intl.NumberFormat("es-ES").format(price)}</div>
+      <div className=" text-[#403E41]">
+        $ {Intl.NumberFormat("es-ES").format(price)}
+      </div>
     </div>
   );
 };
