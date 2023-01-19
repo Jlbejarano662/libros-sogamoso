@@ -12,8 +12,6 @@ import { BsList } from "react-icons/bs";
 // import styles
 import "./Header.css"
 
-import emptyCart from "../img/empty_cart.png"
-
 const Header = () => {
   // get sidebar context --> sidebar open/closed
   const { isOpen, setIsOpen } = useContext(SidebarContext);
@@ -70,7 +68,7 @@ const Header = () => {
       
       {/* menu responsive */}
       {/* this is displayed on screens 768px or less */}
-      <ul className={open ? "hidden" : "container block" + " mx-auto py-2 md:hidden"}>
+      <ul className={open ? "hidden" : "container block mx-auto py-2 md:hidden"}>
         <li className="h-12">
           {/* Link to Home */}
           <Link to={"/"} onClick={() => setOpen(!open)} >

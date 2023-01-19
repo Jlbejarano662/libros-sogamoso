@@ -51,7 +51,7 @@ const Home = () => {
           </div>
           {/* image */}
           <div className="flex flex-1 justify-center items-center  mb-8 lg:pl-10 lg:my-0 ">
-            <img src={whoWeAre} className="max-w-[100%] lg:max-w-xs"></img>
+            <img src={whoWeAre} className="max-w-[100%] lg:max-w-xs" alt="¿Quiénes somos?"></img>
           </div>
         </div>
       </section>
@@ -66,7 +66,7 @@ const Home = () => {
           <div className='flex flex-col lg:flex-row items-center justify-start'>
             <div className="flex flex-1 justify-center items-center  mb-8 lg:pr-10 lg:my-0 ">
               {/* image */}
-              <img src={whatDoWeDo} className="max-w-[100%] lg:max-w-xs"></img>
+              <img src={whatDoWeDo} className="max-w-[100%] lg:max-w-xs" alt="¿Qué hacemos?"></img>
             </div>
             {/* text */}
             <div className="text-justify  text-xl lg:text-2xl text-white lg:pl-10 lg:my-0 mb-8 -order-1 lg:order-none">

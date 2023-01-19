@@ -54,6 +54,7 @@ const PurchaseOrder = () => {
         <img
           src={emptyCart}
           className="max-w-[40%] md:max-w-[20%] lg:max-w-[10%]"
+          alt="Carrito vacío"
         ></img>
         <h1 className="text-5xl text-center lg:text-7xl font-extrabold text-secondary my-8">
           ¡Tu carro está vacío¡

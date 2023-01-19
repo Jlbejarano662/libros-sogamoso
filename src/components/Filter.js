@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 /* receives as parameter the handleOnChecked method that filters 
 the information each time a radio button (desktop) or 

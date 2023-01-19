@@ -40,7 +40,7 @@ const ProductDetails = () => {
 
     });
     setProduct(productA);
-  });
+  }, [products, id]);
 
 
   // if product is not found error message displayed

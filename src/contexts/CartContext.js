@@ -99,7 +99,7 @@ const CartProvider = ({ children }) => {
     }, 0);
     setTotal(total);
 
-  });
+  }, [cart]);
 
   // return methods and data about cart
   return (

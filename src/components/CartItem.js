@@ -11,7 +11,7 @@ import { SidebarContext } from "../contexts/SidebarContext";
 //receives a product as a prop
 const CartItem = ({ item }) => {
   // get sidebar context --> sidebar open/closed
-  const { isOpen, handleClose } = useContext(SidebarContext);
+  const { handleClose } = useContext(SidebarContext);
 
   // get the shopping cart methods
   const { removeFromCart, increaseAmount, decreaseAmount} = useContext(CartContext);
